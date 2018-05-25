@@ -1,24 +1,22 @@
-# README
+# Blogger
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this project, I have tried out the GraphQL.
+* We create a simple blogger application where User has many posts and posts have many comments.
+* We create define our types and mutations inside `app/graphql` folder
+* We implement the Relay Node interface so that we could use cursors for pagination
+* We use the GraphIQL for front API exploration
 
-Things you may want to cover:
+## Installation instructions
 
-* Ruby version
+Installation steps are pretty straight forward
 
-* System dependencies
+* Clone the repository
+* Perform following steps
+  - bundle install
+  - rake db:create
+  - rake db:migrate
+  - rake db:seed
+  - rails s
+  - visit `localhost:3000/graphql` and try the API
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Cheers ! 
